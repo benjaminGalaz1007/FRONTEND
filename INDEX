@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>ConIngenio</title>
+</head>
+
+<body>
+    <h1 class="tituloPrin">ConIngenio</h1><br>
+<!--NAVEGACION-->
+    <nav class="BarraNav" id="intro">
+        <ul>
+            <li><a href="#Home">Home</a></li><br>
+
+            <li><a href="#Servicios">Nuestros Servicios</a></li><br>
+
+            <li><a href="#Formulario">Contactenos</a></li><br>
+
+            <li><a href="#Nosotros">Nosotros</a></li><br>
+            <li><button id="theme-toggle" class="boton-clima">Cambiar a Modo Noche</button></li>
+        </ul>
+    </nav>
+
+    <!--Home-->
+    <section id="Home">
+        <article>
+            <h2>Home</h2>
+            <p>En ConIngenio impulsamos tu transformación a través de Consultoría Digital estratégica y Soluciones
+                Multiexperiencia que conectan con tus usuarios en cualquier entorno. Potenciamos tu agilidad operativa
+                mediante la Evolución de Ecosistemas tecnológicos y el despliegue de Soluciones Low-Code, garantizando
+                una digitalización rápida, escalable y adaptada a los desafíos actuales.</p>
+        </article>
+    </section>
+
+    <!--Servicios-->
+    <section id="Servicios">
+        <h2>Nuestros Servicios</h2>
+        <article>
+            <ul>
+                <li>
+                    <h5>Consultoria Digital:</h5>
+                </li>
+                <p>No solo adoptamos tecnología; diseñamos tu futuro competitivo. Analizamos el ADN de tu organización
+                    para trazar una hoja de ruta estratégica que alinee tus objetivos de negocio con las herramientas
+                    digitales más avanzadas, asegurando que cada inversión se traduzca en resultados medibles.</p>
+
+                <li>
+                    <h5>Soluciones Multiexperiencia:</h5>
+                </li>
+                <p>Conectamos con tus clientes dondequiera que estén. Creamos ecosistemas digitales donde la experiencia
+                    del usuario es fluida y constante, ya sea a través de apps móviles, plataformas web, interfaces de
+                    voz o realidad aumentada, garantizando una interacción impecable en cada dispositivo.</p>
+
+                <li>
+                    <h5>Evolucion De Ecosistemas</h5>
+                </li>
+                <p>Llevamos tu infraestructura actual al siguiente nivel sin detener tu marcha. Transformamos y
+                    conectamos tus sistemas aislados en un entorno digital unificado y escalable, eliminando silos de
+                    información y permitiendo que tus herramientas evolucionen al ritmo que tu empresa lo requiere.</p>
+
+                <li>
+                    <h5>Soluciones lowcode:</h5>
+                </li>
+                <p>La agilidad que tu negocio necesita para innovar rápido. Implementamos plataformas de desarrollo de
+                    bajo código que permiten crear aplicaciones empresariales robustas en tiempo récord, reduciendo los
+                    ciclos de entrega y permitiendo que la tecnología responda a la velocidad del mercado.</p>
+            </ul>
+        </article>
+    </section>
+    <!--Formularios-->
+    <section id="Formulario">
+        <h2>Contacta con nostros</h2>
+        <p>Para solicitar información sobre nuestros servicios y cotización de precios llena nuestro formulario y en
+            pocos días te contactaremos..</p>
+
+        <form id="MiFormulario">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="nombre" id="Nombre"><br>
+
+            <label for="Correo">Correo Electrónico</label>
+            <input type="email" name="Correo" id="Correo"><br>
+
+            <label for="Telefono">Teléfono</label>
+            <input type="tel" name="Telefono" id="Telefono"><br>
+
+            <button type="submit">Enviar</button>
+        </form><br>
+
+        <article>
+            <h2>Nuestra información de contacto</h2>
+            <p>Dirección ksica:
+                Av. Providencia 1234, Oficina 601
+                Providencia, San2ago
+                Chile <br>
+                Contacto telefónico:
+                Teléfono: +56 2 1234 5678 <br>
+                Dominio de la página web:
+                <a href="www.coningenio.cl">www.coningenio.cl</a>
+                Correo electrónico:
+                info@coningenio.cl
+            </p>
+
+        </article>
+    </section>
+
+    <!--Nosotros-->
+    <section id="Nosotros">
+        <article>
+            <h2>Acerca De Nosotros</h2>
+            <h5>Nuestra Misión: </h5>
+            <p>Impulsar la evolución de las organizaciones mediante el diseño e implementación de soluciones digitales
+                estratégicas y escalables. Nos comprometemos a transformar desafíos complejos en ventajas competitivas a
+                través de tecnología multiexperiencia y agilidad operativa, conectando de manera efectiva a las empresas
+                con sus usuarios.</p>
+            <br>
+            <h5>Nuestra Visión</h5>
+            <p>Ser el aliado estratégico referente en transformación digital a nivel regional, reconocidos por nuestra
+                capacidad de anticipar las tendencias del mercado y humanizar la tecnología. Aspiramos a democratizar la
+                innovación mediante ecosistemas digitales eficientes que permitan a cada negocio alcanzar su máximo
+                potencial en la era digital</p>
+            <br>
+            <h5>Nuestros Valores Como Empresa</h5>
+            <p>En ConIngenio, nuestra cultura organizacional se cimienta en la innovación estratégica
+                y el compromiso con la evolución. Creemos firmemente en la democratización de la tecnología
+                a través de la agilidad operativa y la humanización de las herramientas digitales. Actuamos
+                con integridad para transformar desafíos en ventajas competitivas, garantizando que cada solución
+                no solo sea escalable, sino que genere una conexión genuina y eficiente entre las empresas y sus
+                usuarios en el ecosistema digital.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>@Marca registrada ConIngenio R. <a href="#intro">Volver al comienzo</a></p>
+    </footer>
+    <script src="jason.js"></script>
+</body>
+
+</html>
