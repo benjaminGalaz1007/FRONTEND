@@ -1,0 +1,167 @@
+/*COLORES Y MODO NOCTURNO*/
+:root {
+    --fondo: #e0dbdbed;
+    --texto: #1a1a1a;
+    --nav-bg: #f8f9fa;
+    --bg-home: linear-gradient(to bottom, rgb(127, 207, 230), rgb(232, 232, 232));
+    --bg-servicios: linear-gradient(to bottom, rgb(127, 230, 178), rgb(232, 232, 232));
+    --bg-form: linear-gradient(to bottom, rgb(197, 230, 127), rgb(232, 232, 232));
+    --bg-nosotros: linear-gradient(to bottom, rgb(233, 179, 236), rgb(232, 232, 232));
+}
+
+.dark-mode {
+    --fondo: #121212;
+    --texto: #f0f0f0;
+    --nav-bg: #222222;
+    --bg-home: linear-gradient(to bottom, #1a3a4a, #121212);
+    --bg-servicios: linear-gradient(to bottom, #1a4a34, #121212);
+    --bg-form: linear-gradient(to bottom, #3e4a1a, #121212);
+    --bg-nosotros: linear-gradient(to bottom, #3e4a1a, #121212);
+}
+
+/*BOTON DE CAMBIO TEMA*/
+#theme-toggle.boton-clima {
+    padding: 6px 15px;      
+    font-size: 0.85rem;     
+    border-radius: 6px;   
+    min-width: auto;      
+    line-height: 1;    
+    background-color: #1a3a4a;     
+}
+ /*HTML Y FORMATO BODY*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    transition: 0.3s;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*TITULOS Y DISEÑOS GENERALES DE LETRA*/
+.tituloPrin {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #288996;
+    border-left: 5px solid #e67e22;
+    border-right: 5px solid #e67e22;
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    border-left: 5px solid #9be622;
+    text-decoration: overline;
+}
+
+h5{
+   font-family: 'Playfair Display', serif;
+    font-weight: 500; 
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.10em; 
+    color: var(--texto);
+    opacity: 0.9; 
+    padding-left: 20px;
+}
+
+
+/*NAVEGACION*/
+.BarraNav ul {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: var(--nav-bg);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.BarraNav a:hover {
+    background-color: var(--nav-bg); 
+    transform: translateY(-3px); 
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
+    color: #e67e22;
+}
+
+.BarraNav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 600;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 40vh;
+}
+
+/*LLAMADO DE SECCION PARA FONDO*/
+#Home {
+    background: var(--bg-home);
+}
+
+#Servicios {
+    background: var(--bg-servicios);
+}
+
+#Formulario {
+    background: var(--bg-form);
+}
+#Nosotros{
+    background: var(--bg-nosotros);
+}
+
+#MiFormulario {
+    max-width: 500px;
+}
+
+/*FORMULARIO Y DISEÑO BOTON*/
+#MiFormulario button,
+.boton-clima {
+    background-color: #2cbb63;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+#MiFormulario button:hover,
+.boton-clima:hover {
+    background-color: #239a51;
+    transform: translateY(-2px);
+}
+
+/*SISTEMA RESPONSIVO*/
+@media (max-width: 768px) {
+    .BarraNav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tituloPrin {
+        font-size: 50px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
