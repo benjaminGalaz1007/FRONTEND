@@ -1,0 +1,63 @@
+const boton = document.getElementById('theme-toggle');
+const body = document.body;
+const MiFormulario = document.getElementById('MiFormulario');
+
+//cambio de tema
+if (localStorage.getItem('tema') === 'oscuro') {
+    body.classList.add('dark-mode');
+}
+boton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode'); 
+    const esOscuro = body.classList.contains('dark-mode');
+    localStorage.setItem('tema', esOscuro ? 'oscuro' : 'claro');
+});
+
+//FORMULARIO
+MiFormulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    //RECIBE VARIABLES
+
+    const inputNombre = document.getElementById('Nombre');
+    const inputCorreo = document.getElementById('Correo');
+    const inputTelefono = document.getElementById('Telefono');
+    // VALORIZA
+    const nombreValue = inputNombre.value.trim();
+    const correoValue = inputCorreo.value.trim();
+    const telefonoValue = inputTelefono.value.trim();
+    // REGLAS DE FORMATO
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regexTelefono = /^[0-9]{8,15}$/;
+    const regexSoloLetras = /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]+$/;
+
+    //campo vacio
+    if (nombreValue === "" || correoValue === "" || telefonoValue === "") {
+        alert("Llenar todos los campos.");
+        return;
+    }
+    //nombre
+    if (!regexSoloLetras.test(nombreValue)) {
+        alert("Nombre solo con letras.");
+        return;
+    }
+
+    //correo
+    if (!regexEmail.test(correoValue)) {
+        alert("Por favor ingresa un correo electrónico válido.");
+        return;
+    }
+
+    //telefono
+    if (!regexTelefono.test(telefonoValue)) {
+        alert("Error: El teléfono debe contener únicamente números (sin letras ni espacios).");
+        return;
+    }
+    if (telefonoValue.length < 8 || telefonoValue.length > 15) {
+        alert("Error: El teléfono debe tener entre 8 y 15 dígitos.");
+        return;
+    }
+
+    alert("Datos correctamente ingresados");
+});
+
+
